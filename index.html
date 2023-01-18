@@ -9,48 +9,44 @@
   <meta name="keywords" content="Abogados, Estudio jurídico, Abogacía, Derecho, Justicia">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/estilo.css">
 </head>
 
 
 <body>
-
   <!-- NAV -->
-  <nav class="navbar navbar-expand-md navbar-dark">
-    <div>
-      <a href="./index.html"></a><img src="./assets/logoletrablanca.png" class="img-fluid my-1" alt=""></a>
+  <nav class="navbar navbar-expand-md navbar-dark" id="navbar-fixed">
+    <div class="img-nav">
+      <a href="./index.html"><img src="./assets/logoletrablanca.png" class="img-fluid my-1" alt=""></a>
     </div>
     <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item px-2">
-          <a class="nav-link" href="./index.html">Inicio</a>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#areas">Áreas de práctica</a>
         </li>
-        <li class="nav-item px-2">
-          <a class="nav-link" href="./secciones/areas.html">Áreas de práctica</a>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#equipo">Equipo</a>
         </li>
-        <li class="nav-item px-2">
-          <a class="nav-link" href="./secciones/equipo.html">Equipo</a>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#about">Sobre Nosotros</a>
         </li>
-        <li class="nav-item px-2">
-          <a class="nav-link" href="./secciones/about.html">Sobre Nosotros</a>
-        </li>
-        <li class="nav-item px-2">
-          <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#contacto">Contacto</a>
         </li>
       </ul>
     </div>
     </div>
   </nav>
 
-
+  <section id="index">
   <!-- SLIDER DE IMAGENES -->
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
+    <div class="carousel-inner rounded-1">
       <div class="carousel-item active">
         <img src="./assets/ejemplo1.jpg" class="d-block w-100 imgindex" alt="...">
       </div>
@@ -69,7 +65,7 @@
       <div class="card">
         <div class="card-body">
           <h2 class="card-title d-flex justify-content-center"><b>Derecho Penal</b></h2>
-          <p class="card-text">Desde un punto de vista formal definimos al Derecho penal como una parte del ordenamiento jurídico que esta constituida por un conjunto de disposiciones legales que asocian a delitos y estados de peligrosidad criminal, como supuestos de hecho, unas penas y medidas de seguridad, como consecuencias jurídicas.<br>Y desde una visión material podemos decir que el Derecho penal es una parte del ordenamiento jurídico que tiene por objeto la protección de los bienes jurídicos fundamentales del individuo y la sociedad, funcionando como un instrumento de control que persigue el objetivo de mantener el orden social. </p>
+          <p class="card-text">Desde un punto de vista formal definimos al Derecho penal como una parte del ordenamiento jurídico que esta constituida por un conjunto de disposiciones legales que asocian a delitos y estados de peligrosidad criminal, como supuestos de hecho, unas penas y medidas de seguridad, como consecuencias jurídicas. </p>
         </div>
       </div>
     </div>
@@ -77,7 +73,7 @@
       <div class="card">
         <div class="card-body">
           <h2 class="card-title d-flex justify-content-center"><b>Derecho Laboral</b></h2>
-          <p class="card-text">El derecho laboral es la rama del derecho que se encarga de regularizar, mediante reglas jurídicas, las relaciones que establecen a partir de trabajo. Este conjunto de reglas debe garantizar el cumplimiento de las obligaciones de las partes que intervienen en una relación de trabajo. <br>El mercado laboral está en contínuo cambio, por eso es importante que el derecho laboral siempre se adapte a las nuevas condiciones y particularidades que la realidad impone, a fin de cumplir con su objetivo principal que es defender al trabajador.</p>
+          <p class="card-text">El derecho laboral es la rama del derecho que se encarga de regularizar, mediante reglas jurídicas, las relaciones que establecen a partir de trabajo. Este conjunto de reglas debe garantizar el cumplimiento de las obligaciones de las partes que intervienen en una relación de trabajo. </p>
         </div>
       </div>
     </div>
@@ -85,24 +81,154 @@
       <div class="card">
         <div class="card-body">
           <h2 class="card-title d-flex justify-content-center"><b>Derecho Empresarial</b></h2>
-          <p class="card-text">El derecho empresarial es la rama del derecho que se centra en regular las actividades de una empresa independientemente de su tamaño (ya sea una pyme o una multinacional). Se trata de un ámbito que abarca desde cómo abrir un negocio, la contratación de empleados, hasta cómo se debe actuar en el cierre. El conocimiento de los fundamentos del derecho empresarial proporciona las herramientas necesarias para poder asesorar a una empresa, pero no solo desde el punto jurídico sino también desde el punto de vista económico en relación con la aplicación y el cumplimiento o incumplimiento de la normativa.</p>
+          <p class="card-text">El derecho empresarial es la rama del derecho que se centra en regular las actividades de una empresa independientemente de su tamaño (ya sea una pyme o una multinacional). Se trata de un ámbito que abarca desde cómo abrir un negocio, la contratación de empleados, hasta cómo se debe actuar en el cierre. </p>
         </div>
       </div>
     </div>
   </div>
+  
+</section>
+                                                           <!--SECCION AREAS DE PRACTICa-->
+<section id="areas">
+    <!-- TITULO -->
+    <h1 class="text-center">Áreas de Práctica y Sectores</h1>
 
+    <section class="d-flex justify-content-around">
+    <div>
+        <div class="h3 subtitle">Áreas</div>
+        <div class="py-5 pIndex roll-in-left">Derecho Penal</div>
+        <div class="py-5 pIndex roll-in-left">Derecho Laboral</div>
+        <div class="py-5 pIndex roll-in-left">Derecho Administrativo</div>
+        <div class="py-5 pIndex roll-in-left">Derecho Tributario</div>
+        <div class="py-5 pIndex roll-in-left">Derecho Contable</div>
+        <div class="py-5 pIndex roll-in-left">Derecho Inmobiliario</div>
+    </div>
 
+    <div>
+        <div class="h3 subtitle">Sectores</div>
+        <div class="py-5 pIndex roll-in-blurred-right">Empresa Familiar</div>
+        <div class="py-5 pIndex roll-in-blurred-right">Seguros</div>
+        <div class="py-5 pIndex roll-in-blurred-right">Telecomunicaciones</div>
+        <div class="py-5 pIndex roll-in-blurred-right">Turismo y Hoteles</div>
+        <div class="py-5 pIndex roll-in-blurred-right">Sanidad</div>
+        <div class="py-5 pIndex roll-in-blurred-right">Corporaciones</div>
+    </div>
+    </section>
+</section>
+                                            <!--SECCION DE EQUIPO-->
+<section id="equipo">
+  <!-- TITULO -->
+  <div>
+    <h1 class="text-center">Equipo</h1>
+</div>
 
+<!-- BODY -->
 
+<div class="d-flex ms-3">
+    <img src="../assets/miembro1.jpg" alt="" class="imgmiembros my-2">
+    <div class="container-member">
+    <h3 class="ms-5 d-block my-3">Jorge R. De la Cruz</h3>
+    <p class="ms-5 my-3">Fundador del estudio jurídico con más de 30 años de experiencia.</p>
+    <p class="ms-5 my-3">Abogado especialista en derecho penal. </p>
+    <p class="ms-5 my-3">Se desenvuelve en las áreas de derecho contable, derecho tributario, seguros, fusiones y adquisiciones, entidades financieras y capital riesgo.</p>
+    </div>
+</div>
 
-  <script src="./js/bootstrap.bundle.js"></script>
-</body>
+<div class="d-flex ms-3">
+    <img src="../assets/miembro2.jpg" alt="" class="imgmiembro2 my-2">
+    <div class="container-member">
+    <h3 class="ms-5 d-block my-3">Ana Luz Aranda</h3>
+    <p class="ms-5 my-3">Abogada especialista en derecho laboral.</p>
+    <p class="ms-5 my-3">Planes y fondos de pensiones, seguros colectivos y planes de prejubilación.</p>
+    <p class="ms-5 my-3">Experiencia en el sector financiero, seguros, inmobiliario, sanidad y fundaciones.</p> 
+    </div>
+</div>
+
+<div class="d-flex ms-3">
+    <img src="../assets/miembro3.jpg" alt="" class="imgmiembro3 my-2">
+    <div class="container-member">
+    <h3 class="ms-5 d-block my-3">José Guillermo De la Cruz</h3>
+    <p class="ms-5 my-3">Abogado y socio fundador del estudio.</p>
+    <p class="ms-5 my-3">Especialista en derecho empresarial.</p>
+    <p class="ms-5 my-3">Asesora de manera recurrente en materia contractual, societaria y de reestructuración interna a diferentes grupos de sociedades.</p>  
+    </div>
+</div>
+
+<div class="d-flex ms-3">
+    <img src="../assets/miembro4.jpg" alt="" class="imgmiembro4 my-2">
+    <div class="container-member">
+    <h3 class="ms-5 d-block my-3">Jaqueline Colina</h3>
+    <p class="ms-5 my-3">Abogada especialista en derecho laboral.</p>
+    <p class="ms-5 my-3">Litigios mercantiles y civiles entre empresas, incluso en materia contractual, concursal y societaria, tanto en las instancias judiciales como en arbitrajes institucionales. </p>
+    <p class="ms-5 my-3">Práctica de derecho procesal, de contratación mercantil y derecho societario, penal y civil.</p>     
+    </div>
+</div>
+</section>
+                                                      <!--SECCION ABOUT-->
+<section id="about">
+  <div>
+    <h1 class="text-center">Sobre Nosotros</h1>
+</div>
+
+<!-- BODY -->
+
+<div class="my-5 mx-5 slide-in-top pTrayectoria1">De la Cruz Abogados es una firma de servicios legales y fiscales que asesora a nivel local y regional desde todos los ángulos del derecho de los negocios. La fuerza del estudio reside en su equipo, con personas que trabajan de manera transversal para resolver los problemas de sus clientes. Máxima calidad de servicio, compromiso ético y actitud innovadora para anticiparse a las necesidades del mercado. Con el fin último de contribuir a generar un entorno de seguridad y confianza que impulse el desarrollo de las empresas en una sociedad más justa, ética, responsable y sostenible.
+</div>
+
+<div class="my-5 mx-5 slide-in-top pTrayectoria2">Nos centramos en el derecho administrativo, lo que nos permite afrontar cada caso desde un conocimiento profundo con el aval de la experiencia. Ofrecemos distintas alternativas a la hora de buscar la solución más idónea para nuestros clientes. Además, el estudio mantiene puntualmente informado al cliente sobre el estado de tramitación de su expediente o procedimiento judicial. El letrado está disponible para resolver cualquier aclaración y obtener respuesta a la mayor brevedad.</div>
+
+<div class="my-5 mx-5 slide-in-top pTrayectoria3">Por otra parte, antes de iniciar cualquier gestión, el cliente contará con un presupuesto previo que informará de los honorarios de su letrado. El caso será llevado de principio a fin por el letrado de su elección. No existirá ningún otro profesional interpuesto, ni se fraccionará el trabajo entre abogados que no conoce.</div>
+
+<div class="my-5 mx-5 slide-in-top pTrayectoria4">Desde una base bien establecida de conocimiento y comprensión de los intereses comerciales de nuestros clientes, el estudio ayuda a los clientes corporativos con los desafíos de litigios en todas las facetas de sus negocios y operaciones. Con años de experiencia en juicios, los abogados pueden simplificar y transmitir de manera efectiva los matices de disputas comerciales complejas a jueces y jurados de tribunales, paneles de arbitraje, funcionarios de audiencias administrativas y en varios foros de apelación.</div>
+
+<div class="my-5 mx-5 slide-in-top pTrayectoria5">
+    <cite>"Las buenas costumbres, y no la fuerza, son las columnas de las leyes; y el ejercicio de la justicia es el ejercicio de la libertad."<br><strong>Simón Bolívar</strong></cite>
+</div>
+</section>
+                                                <!--SECCION DE CONTACTO-->
+<section id="contacto">
+    <!-- TITULO -->
+    <div>
+      <h1 class="text-center"><b>Contacto</b></h1>
+  </div>
+
+  <!-- BODY -->
+
+  <section class="d-flex justify-content-around">
+      <div>
+          <div class="h3 subtitle">Celulares</div>
+          <div class="py-5 pIndex roll-in-left">3756-610977</div>
+          <div class="py-5 pIndex roll-in-left">3764-583630</div>
+          <div class="py-5 pIndex roll-in-left">1156201340</div>
+          <div class="py-5 pIndex roll-in-left">3756-433479</div>
+      </div>
+
+      <div>
+          <div class="h3 subtitle">Correos electrónicos</div>
+          <div class="py-5 pIndex roll-in-blurred-right">ejc-delacruz@cableat.net</div>
+          <div class="py-5 pIndex roll-in-blurred-right">luzaranda24@gmail.com</div>
+          <div class="py-5 pIndex roll-in-blurred-right">joseguillermodelacruz@gmail.com</div>
+          <div class="py-5 pIndex roll-in-blurred-right">jakelin.col@gmail.com</div>
+      </div>
+  </section>
+
+  <div class="d-flex flex-column mb-3">
+      <div class="h3 subtitle text-center">Ubicación</div>
+      <div class="d-flex justify-content-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.0451679455778!2d-56.02059248438662!3d-28.053645448505968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945669ddf060f9c1%3A0x700e74f13214c345!2sDE%20LA%20CRUZ%20ABOGADOS!5e0!3m2!1ses-419!2sar!4v1661347174030!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </div>
+</section>
 
   <!-- FOOTER -->
-  <footer class="text-center text-white footer">
+  <section id="footer">
+      <footer class="text-center text-white footer">
     <div class="text-center p-3">© 2022 Copyright:
       <p class="d-inline text-reset fw-bold">De la Cruz Abogados</p>
     </div>
   </footer>
+  </section>
 
+<script src="./js/bootstrap.bundle.js"></script>
+</body>
 </html>

@@ -4,6 +4,12 @@
   box-sizing: border-box; }
 
 /*variables*/
+:root{
+  --main--font: 'Montserrat', sans-serif;
+  --secondary--font: 'Raleway', sans-serif;
+}
+
+
 /*MAP para los iconos de seccion equipo*/
 .fa-facebook {
   background-color: #8a8ad3; }
@@ -19,18 +25,82 @@
   border-radius: 35%; }
 
 body {
-  min-height: 120vh;
-  background-color: #a2a8d6;
+  background-color: white;
   border: none;
-  position: relative;
-  padding-bottom: 75px;
   max-width: 100vw; }
+
+#contacto{
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  margin: 25px;
+}
+
+#areas{
+  margin-top: 45px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+#about{
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+#index{
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 180px;
+  border-radius: 5px;
+}
+
+#equipo{
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
 
 /*NAV*/
 .navbar {
-  background-color: #30376f; }
+  background-color: #011e61;
+}
   .navbar .nav-item {
-    font-size: 20px; }
+    font-size: 20px;
+    color: white;
+  }
+
+.img-nav{
+  margin-left: 15px;
+}
+
+#navbar-fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 170px;
+}
+
+/*carousel*/
+#carouselExampleSlidesOnly{
+  width: 90%;
+  margin: 0 auto;
+}
 
 /* TIPOGRAFIA titulo y subtitulo*/
 a {
@@ -39,35 +109,44 @@ a {
   color: black; }
 
 .pIndex {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px; }
+  font-family: var(--secondary--font);
+  font-size: 20px; 
+}
+
+p{
+  font-family: var(--secondary--font);
+}
 
 li {
   list-style: none; }
 
 h1 {
-  color: #30376f;
-  font-family: "Cormorant SC";
+  color: #011e61;
+  font-family: var(--main--font);
   font-size: 45px; }
 
 .subtitle {
-  color: #30376f; }
+  color: #011e61; }
 
-.card-title {
-  color: #30376f;
-  font-family: "Cormorant SC"; }
 
 /*BODY CARDS*/
+.card{
+  height: 100%;
+}
 .card-body {
-  transition: all 0.3s; }
+  transition: all 0.3s;
+text-align: center;
+line-height: 30px; }
   .card-body:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; }
   .card-body .card-title {
     color: #30376f;
-    font-family: "Cormorant SC"; }
+    font-family: var(--main--font); }
 
 .imgindex {
-  height: 650px; }
+  height: 550px;
+  object-fit: cover;
+}
 
 .imgmiembros, .imgmiembro2, .imgmiembro3, .imgmiembro4 {
   height: 320px;
@@ -78,20 +157,32 @@ h1 {
   animation-duration: 1s;
   transition: transform 0.3s; }
   .imgmiembros:hover, .imgmiembro2:hover, .imgmiembro3:hover, .imgmiembro4:hover {
-    transform: scale(105%); }
+    transform: scale(102%); }
+
 
 /* iframe de ubicacion */
 iframe {
   border-radius: 5px; }
   iframe:hover {
-    transform: scale(105%); }
+    transform: scale(102%);
+    transition: all 0.5s; 
+  }
 
+.container-member{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /*FOOTER*/
-.footer {
+#footer {
   background-color: #30376f;
-  width: 100%;
-  position: absolute;
-  bottom: 0; }
+  width: 100%; 
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* animaciones de las img de seccion equipo*/
 @keyframes imgtraslado {
