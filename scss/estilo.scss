@@ -337,11 +337,9 @@ cite{
         padding: 5px 0 5px 0;
         position: static;
     }
-
     #carouselExampleSlidesOnly{
         width: 100%;
     }
-
     #navbar-fixed{
         position: static;
         width: 100%;
@@ -351,13 +349,11 @@ cite{
         width: 100%;
         min-height: 100%;
     }
-
     #areas-and-sector,#equipo,#about,#contacto{
         margin: 20px 0;
         width: 100%;
         min-height: 100%;
     }
-
     .member-main{
         min-width: 100%;
         display: flex;
@@ -371,6 +367,11 @@ cite{
     .pTrayectoria1,.pTrayectoria2,.pTrayectoria3,.pTrayectoria4{
         text-align: center;
         width: 100%;
+    }
+    .icons-areas,.container-areas,.icons-sectores,.container-sectores{
+        display: flex;
+        flex-direction: column;
+        margin: 3px auto;
     }
 }
 
