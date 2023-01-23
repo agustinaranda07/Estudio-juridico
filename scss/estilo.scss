@@ -324,7 +324,7 @@ cite{
 @media (max-device-width: 480px){
     body{
         background-color: #f4f4f4;
-        width: 480px;
+        max-width: 480px;
         margin: 0;
         display: flex;
         flex-direction: column;
