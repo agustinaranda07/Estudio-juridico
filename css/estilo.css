@@ -280,7 +280,7 @@ cite {
   .member-main {
     min-width: 100%; } }
 
-@media (max-width: 480px) {
+@media (max-device-width: 480px) {
   body {
     background-color: #f4f4f4;
     width: 480px;
