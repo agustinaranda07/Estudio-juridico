@@ -119,15 +119,22 @@ h1{
 }
 
 /*seccion de areas y sectores*/
+.areas,.sectores{
+    margin: 25px auto;
+}
 .icons-areas,.icons-sectores{
     display: flex;
+    margin: 10px auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.container-areas,.container-sectores{
+
+.container-area,.container-sector{
+    margin: 0 30px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 // IMGS equipo
@@ -174,8 +181,7 @@ h1{
 
 /*seccion de contacto*/
 .phone,.email{
-    background-color: #011e61;
-    color: #f4f4f4;
+    color: black;
     border-radius: 5px;
     padding: 10px;
     width: 30%;
@@ -183,7 +189,7 @@ h1{
 }
 
 .phone-color,.email-color{
-    color: #f4f4f4;
+    color: #011e61;
 }
 
 /* iframe de ubicacion */
@@ -372,6 +378,7 @@ cite{
         display: flex;
         flex-direction: column;
         margin: 3px auto;
+        justify-content: center;
     }
 }
 
