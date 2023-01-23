@@ -273,16 +273,107 @@ cite{
 @keyframes roll-in-blurred-right{0%{transform:translateX(1000px) rotate(720deg);filter:blur(50px);opacity:0}100%{transform:translateX(0) rotate(0deg);filter:blur(0);opacity:1}}
 
 /* MEDIAS para poner en columna el nav y separar las cards cuando estan en columnas*/
-@media only screen and (max-device-width: 768px){
+@media (max-width: 768px){
+    body{
+        background-color: #f4f4f4;
+        width: 768px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
     .navbar{
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 5px 0 5px 0;
+        position: static;
     }
-    .card{
-        margin: 5px 0;
+
+    #carouselExampleSlidesOnly{
+        width: 100%;
+    }
+
+    #navbar-fixed{
+        position: static;
+        width: 100%;
+    }
+    #index{
+        margin: 0;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    #areas-and-sector,#equipo,#about,#contacto{
+        margin: 20px 0;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .member-main{
+        min-width: 100%;
     }
 }
+
+@media (max-width: 480px){
+    body{
+        background-color: #f4f4f4;
+        width: 480px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px 0 5px 0;
+        position: static;
+    }
+
+    #carouselExampleSlidesOnly{
+        width: 100%;
+    }
+
+    #navbar-fixed{
+        position: static;
+        width: 100%;
+    }
+    #index{
+        margin: 0;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    #areas-and-sector,#equipo,#about,#contacto{
+        margin: 20px 0;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .member-main{
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px auto;
+    }
+    .p-trayectoria-main{
+        width: 100%;
+    }
+    .pTrayectoria1,.pTrayectoria2,.pTrayectoria3,.pTrayectoria4{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
 
 
