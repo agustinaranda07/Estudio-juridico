@@ -354,4 +354,6 @@ cite {
     width: 100%; }
   .pIndex {
     font-family: 'Raleway', sans-serif;
-    font-size: 15px; } }
+    font-size: 15px; }
+  .phone, .email {
+    width: 100%; } }
