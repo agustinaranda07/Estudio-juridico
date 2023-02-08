@@ -6,7 +6,6 @@
 
 $carousel-transition-duration: 0.01ms;
 
-
 body{
     background-color: #f4f4f4;
     max-width: 100vw;
@@ -21,18 +20,6 @@ body{
     height: 100%;
 }
 
-/*MAP para los iconos de seccion equipo*/
-$social:(
-    facebook: rgb(138, 138, 211),
-    whatsapp: rgb(112, 167, 112),
-    instagram: rgb(206, 136, 147)
-);
-
-@each $socialmedia, $color in $social {
-    .fa-#{$socialmedia}{
-        background-color: $color;
-    }   
-};
 
 .fa-brands{
     padding: 17px 3px 17px 3px;
@@ -201,48 +188,7 @@ iframe{
     align-items: center;
 }
 
-/* animaciones de las img de seccion equipo*/
-
-@keyframes imgtraslado {
-    0%{
-        transform: translate(500px,0);
-    }
-
-    75%{
-        transform: scale(150%);
-    }
-
-    100%{
-        transform: scale(110%);
-
-    }
-    
-};
-
-
-/* Animaciones seccion trayectoria */
-
-.slide-in-top{-webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both}
-
-@-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
-
-.pTrayectoria1{
-    animation-delay: 0.5s;
-    width: 75ch;
-    text-align: center;
-}
-.pTrayectoria2{
-    animation-delay: 1s;
-    width: 75ch;
-    text-align: center;
-}
-.pTrayectoria3{
-    animation-delay: 1.5s;
-    width: 75ch;
-    text-align: center;
-}
-.pTrayectoria4{
-    animation-delay: 2s;
+.pTrayectoria1,.pTrayectoria2,.pTrayectoria3,.pTrayectoria4{
     width: 75ch;
     text-align: center;
 }
@@ -257,15 +203,6 @@ cite{
     font-style: italic;
 }
 
-/* Animaciones seccion Areas de practica y contacto */
-
-.roll-in-left{animation:roll-in-left .6s ease-out both}
-
-@keyframes roll-in-left{0%{transform:translateX(-800px) rotate(-540deg);opacity:0}100%{transform:translateX(0) rotate(0deg);opacity:1}}
-
-.roll-in-blurred-right{animation:roll-in-blurred-right .65s cubic-bezier(.23,1.000,.32,1.000) both}
-
-@keyframes roll-in-blurred-right{0%{transform:translateX(1000px) rotate(720deg);filter:blur(50px);opacity:0}100%{transform:translateX(0) rotate(0deg);filter:blur(0);opacity:1}}
 
 //media queries mobile
 @media (min-width: 360px) and (max-width: 480px){
@@ -552,6 +489,7 @@ cite{
     }
 }
 
+//extra large
 @media (min-width: 1201px){
     #navbar-fixed{
         position: fixed;
